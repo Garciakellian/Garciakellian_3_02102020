@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--header--*/
+.header {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.header__logo {
+  padding-top: 15px;
+  font-size: 1.5em;
+  padding-left: 20px;
+  color: black;
+}
+.header__img {
+  width: 200px;
+  padding-top: 10px;
+  z-index: -1;
+  display: block;
+  margin: 0 auto;
+}
+
+/*--photo--*/
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+/*--titre--*/
+.titre {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 40px;
+  margin-top: -50px;
+  position: relative;
+  background-color: #ededed;
+  padding: 20px 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  justify-content: space-between;
+}
+.titre__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
+  grid-row: 1;
+  grid-column: 1;
+}
+.titre__logo {
+  font-size: 1.8em;
+  grid-row: 1;
+  grid-column: 2;
+  cursor: pointer;
+  text-align: center;
+}
+.titre__logo:hover {
+  color: #9356DC;
+}
+.titre__logo:active + .titre__anime {
+  transform: scale(1.1);
+}
+.titre__anime {
+  font-size: 1.8em;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  grid-row: 1;
+  grid-column: 2;
+  cursor: pointer;
+  color: #9356DC;
+  height: 30px;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+.titre__anime:hover {
+  transform: scale(1.1);
+}
+
+/*--menu--*/
+.contenue {
+  padding: 15px;
+  background: #ededed;
+}
+.contenue__titre {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  border-bottom: #99E2D0 5px solid;
+  width: 50px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.contenue-div {
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+.contenue-div__titre {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.contenue-div__text {
+  display: flex;
+  font-size: 1em;
+  justify-content: space-between;
+}
+.contenue-div__text__prix {
+  font-weight: bold;
+  transform: translateX(100px);
+  transition: transform 400ms;
+}
+
+.div-animation {
+  display: flex;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: #eaeaea 0px 10px 15px;
+  border-radius: 20px;
+}
+.div-animation:hover .div-animation__icone__i {
+  transform: rotate(360deg);
+}
+.div-animation:hover .contenue-div__text__prix {
+  transform: translateX(0);
+}
+.div-animation:hover .div-animation__icone {
+  transform: translateX(0);
+}
+.div-animation__icone {
+  padding: 0 20px;
+  background-color: #99E2D0;
+  color: white;
+  width: 50px;
+  display: flex;
+  transform: translateX(150px);
+  transition: transform 400ms;
+  transform-origin: 100% 50%;
+}
+.div-animation__icone__i {
+  margin: auto;
+  font-size: 3em;
+  transform: rotate(0deg) scale(1);
+  transition: transform 400ms;
+}
+
+@media (min-width: 576px) {
+  .contenue-div__titre {
+    font-size: 1.5em;
+  }
+  .contenue-div__prix {
+    font-size: 1.2em;
+  }
+}
+#boutton {
+  cursor: pointer;
+  display: block;
+  margin: 40px auto;
+  padding: 20px 40px;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  border: none;
+  box-shadow: grey 0px 5px 15px;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, box-shadow 1s;
+}
+#boutton:hover {
+  opacity: 0.7;
+  box-shadow: grey 5px 10px 10px;
+  transform: scale(1);
+}
+
+.anime-1 {
+  animation: menu 0.5s 0s both;
+}
+
+.anime-2 {
+  animation: menu 0.5s 0.3s both;
+}
+
+.anime-3 {
+  animation: menu 0.5s 0.6s both;
+}
+
+.anime-4 {
+  animation: menu 0.5s 0.9s both;
+}
+
+.anime-5 {
+  animation: menu 0.5s 1.2s both;
+}
+
+.anime-6 {
+  animation: menu 0.5s 1.5s both;
+}
+
+.anime-7 {
+  animation: menu 0.5s 1.8s both;
+}
+
+.anime-8 {
+  animation: menu 0.5s 2.1s both;
+}
+
+.anime-9 {
+  animation: menu 0.5s 2.4s both;
+}
+
+.anime-10 {
+  animation: menu 0.5s 2.7s both;
+}
+
+.anime-11 {
+  animation: menu 0.5s 3s both;
+}
+
+.anime-12 {
+  animation: menu 0.5s 3.3s both;
+}
+
+.anime-13 {
+  animation: menu 0.5s 3.6s both;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animation {
+  background-color: #99E2D0;
+  width: 100px;
+  height: 80px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/*--footer--*/
+.footer {
+  background: #353535;
+  color: white;
+  padding-bottom: 30px;
+}
+.footer__titre {
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+  padding: 20px;
+}
+
+.liste {
+  padding-left: 30px;
+}
+.liste__logo {
+  padding-right: 30px;
+}
+.liste li {
+  padding-bottom: 10px;
+}
+.liste__a {
+  color: white;
+}
+
+/*# sourceMappingURL=menu.css.map */

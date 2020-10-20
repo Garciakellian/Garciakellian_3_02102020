@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Oh My Food</title>
+</head>
+<body>
+    <div class="loading__spinner">
+    <i class="fas fa-spinner spinner"></i></div>
+    <div class="container">
+    <!--Header-->
+    <header class="header">
+        <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" class="header__img"/>
+    </header>
+<main>
+    <section id="first-part">
+    <!--reservation-->
+        <div class="reservation">
+            <div class="position">
+                <i class="fas fa-map-marker-alt position__logo"></i>
+                <form action="traitement.php" class="position__form">
+                    <input class="position__forminput" type="text" value="Paris, Belleville" id="saisie">
+                </form>
+            </div>
+            <h1 class="reservation__title">Réservez le menu qui vous convient</h1>
+            <p class="reservation__p">Découvrez des restaurant d'éxeption,<br/> séléctionnés par nos soins</p>
+            <a href="" class="reservation__button">Explorer nos restaurants</a>
+        </div>
+    <!--fonctionnement -->
+        <div class="fonctionnement">
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="step">
+                <p class="step__number">1</p>
+                <i class="fas fa-mobile-alt step__logo"></i>
+                <p class="step__p">Choisissez un restaurant</p>
+            </div>
+            <div class="step">
+                <p class="step__number">2</p>
+                <i class="fas fa-list-ul step__logo"></i>
+                <p class="step__p">Composez votre menu</p>
+            </div>
+            <div class="step">
+                <p class="step__number">3</p>
+                <i class="fas fa-store step__logo"></i>
+                <p class="step__p">Degustez au restaurant</p>
+            </div>
+        </div>
+    </section>
+    <!--restaurant-->
+    <section class="restaurant">
+        <h2 class="restaurant__title">Restaurants</h2>
+        <div id="second-part">
+            <article class="article bg1">
+                <p class="article__new">Nouveau</p>
+                <div class="description">
+                    <h2 class="description__title"><a href="html/lapalette.html" class="description__a">La palette du goût</a><br/><span class="description__ville">Ménilmontant</span></h2>
+                    <i class="far fa-heart description__heart"></i>
+                    <i class="fas fa-heart description__anime"></i>
+                </div>
+            </article>
+            <article class="article bg2">
+                <p class="article__new">Nouveau</p>
+                <div class="description">
+                    <h2 class="description__title"><a href="html/lanote.html" class="description__a">La note enchantée</a><br/><span class="description__ville">Charonne</span></h2>
+                    <i class="far fa-heart description__heart"></i>
+                    <i class="fas fa-heart description__anime"></i>
+                </div>
+            </article>
+            <article class="article bg3">
+                <div class="description">
+                    <h2 class="description__title"><a href="html/alafrancaise.html" class="description__a">À la française</a><br/><span class="description__ville">Cité Rouge</span></h2>
+                    <i class="far fa-heart description__heart"></i>
+                    <i class="fas fa-heart description__anime"></i>
+                </div>
+            </article>
+            <article class="article bg4">
+                <div class="description">
+                    <h2 class="description__title"><a href="html/ledelice.html" class="description__a">Le délice des sens</a><br/><span class="description__ville">Folie-Méricourt</span></h2>
+                    <i class="far fa-heart description__heart"></i>
+                    <i class="fas fa-heart description__anime"></i>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+    <!--footer-->
+    <footer class="footer">
+        <h2 class="footer__titre">ohmyfood</h2>
+        <ul class="liste">
+            <li class="liste__1"><a href="#" class="liste__a"><i class="fas fa-utensils liste__logo"></i>Proposer un restaurant</a></li>
+            <li class="liste__2"><a href="#" class="liste__a"><i class="fas fa-hands-helping liste__logo"></i>Devenir partenaire</a></li>
+            <li class="liste__3"><a href="#" class="liste__a">Mention legal</a></li>
+            <li class="liste__4"><a href="mailto:garcia-k@hotmail.fr" class="liste__a">Contact</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>
